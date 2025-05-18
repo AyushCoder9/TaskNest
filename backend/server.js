@@ -6,7 +6,7 @@ import cookieParser from "cookie-parser";
 import fs from "node:fs";
 import errorHandler from "./src/helpers/errorhandler.js";
 
-dotenv.config();
+dotenv.config({ path: './.env' });
 
 const port = process.env.PORT || 8000;
 
